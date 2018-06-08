@@ -1,0 +1,271 @@
+@@include('partials/header.html')
+<main class="master-template">
+
+<section class="hero hero--center">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h5>Example</h5>
+      <h1>Master Template</h1>
+      <!-- <div class="social-links">
+        <a href="#" class="footer-global__social-item">
+          <img src="media/twitter.svg" alt="">
+        </a>
+        <a href="#" class="footer-global__social-item">
+          <img src="media/linked-in.svg" alt="">
+        </a>
+        <a href="#" class="footer-global__social-item">
+          <img src="media/facebook.svg" alt="">
+        </a>
+      </div> -->
+    </div>
+  </div>
+  <div class="hero__background hero__background--image" style="background-image:url(../media/about.jpg);">
+
+  </div>
+</section>
+
+<section class="general">
+  <div class="container general__container">
+    <header class="general__header">
+      <h2>Founded in 2003</h2>
+    </header>
+    <p><b>SecureSheet Technologies, LLC</b> is a privately held company which began in 2003 with a vision for creating a simple way for businesses to communicate more effectively. Leveraging existing technologies, and focusing on easy adoption for users, SecureSheet has transformed the ordinary spreadsheet, into secure, multi-user, web based, business applications.</p>
+    <p>SecureSheet has successfully helped its customers address a wide variety of needs. From large, multi-national enterprises looking for a quick solution to tackle one-time, short term projects to small or medium sized companies looking to turn their current spreadsheets into full blown, on-going applications, SecureSheet has solved their problems.</p>
+  </div>
+</section>
+
+<section class="general general--columns general--two-column">
+  <div class="container general__container">
+    <div class="general__item">
+      <header class="general__header">
+        <h3>2 Column</h3>
+      </header>
+      <ul>
+        <li>Multiple spreadsheets were manually created and emailed to end users</li>
+        <li>Some unauthorized associates had access to sensitive data</li>
+        <li>There were no effective controls to enforce data integrity</li>
+        <li>There was no mechanism to monitor the status or progress of the data collection</li>
+        <li>Each spreadsheet was manually reviewed and sent back for revisions</li>
+        <li>Spreadsheets were manually aggregated to calculate totals</li>
+        <li>The process spanned several weeks or months for a single event</li>
+        <li>Not SOX compliant</li>
+        </ul>
+      <a href="#" class="button">Button</a>
+      <p>SecureSheet has successfully helped its customers address a wide variety of needs. From large, multi-national enterprises looking for a quick solution to tackle one-time, short term projects to small or medium sized companies looking to turn their current spreadsheets into full blown, on-going applications, SecureSheet has solved their problems.</p>
+    </div>
+    <div class="general__item">
+      <header class="general__header">
+        <h3>2 Column</h3>
+      </header>
+      <p><b>SecureSheet Technologies, LLC</b> is a privately held company which began in 2003 with a vision for creating a simple way for businesses to communicate more effectively. Leveraging existing technologies, and focusing on easy adoption for users, SecureSheet has transformed the ordinary spreadsheet, into secure, multi-user, web based, business applications.</p>
+      <a href="#" class="button">Button</a>
+      <p>SecureSheet has successfully helped its customers address a wide variety of needs. From large, multi-national enterprises looking for a quick solution to tackle one-time, short term projects to small or medium sized companies looking to turn their current spreadsheets into full blown, on-going applications, SecureSheet has solved their problems.</p>
+    </div>
+  </div>
+</section>
+
+<section class="general general--columns general--three-column">
+  <div class="container general__container">
+    <div class="general__item">
+      <header class="general__header">
+        <h4>3 Column</h3>
+      </header>
+      <p><b>SecureSheet Technologies, LLC</b> is a privately held company which began in 2003 with a vision for creating a simple way for businesses to communicate more effectively. Leveraging existing technologies, and focusing on easy adoption for users, SecureSheet has transformed the ordinary spreadsheet, into secure, multi-user, web based, business applications.</p>
+      <a href="#" class="button">Button</a>
+    </div>
+    <div class="general__item">
+      <header class="general__header">
+        <h4>3 Column</h4>
+      </header>
+      <p><b>SecureSheet Technologies, LLC</b> is a privately held company which began in 2003 with a vision for creating a simple way for businesses to communicate more effectively. Leveraging existing technologies, and focusing on easy adoption for users, SecureSheet has transformed the ordinary spreadsheet, into secure, multi-user, web based, business applications.</p>
+
+      <a href="#" class="button button--hollow">Hollow Button</a>
+    </div>
+    <div class="general__item">
+      <header class="general__header">
+        <h4>3 Column</h4>
+      </header>
+      <p><b>SecureSheet Technologies, LLC</b> is a privately held company which began in 2003 with a vision for creating a simple way for businesses to communicate more effectively. Leveraging existing technologies, and focusing on easy adoption for users, SecureSheet has transformed the ordinary spreadsheet, into secure, multi-user, web based, business applications.</p>
+      <a href="#" class="button button--hollow">
+        @@include('../media/download-icon.svg')
+        Icon Button
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial testimonial--no-image">
+  <div class="container testimonial__container">
+    <div class="testimonial__content">
+      <div class="testimonial__icon">
+        @@include('../media/quote.svg')
+      </div>
+      <h5 class="testimonial__label">
+        Message from our Owners
+      </h5>
+      <h4 class="testimonial__quote">
+        SecureSheet is the absolute best HR tool I've ever used. Even if we had a perfect system solution, nothing could beat the flexibility and 'on the fly' capabilities.
+      </h4>
+      <img class="testimonial__source-image" src="media/owner-image.png">
+      <p class="testimonial__source"><b>Joe & Kim Holland</b> – Owners</p>
+    </div>
+  </div>
+</section>
+
+<section class="general image-grid">
+  <div class="container image-grid__container">
+    <header class="image-grid__header">
+      <h3>Image Grid</h3>
+    </header>
+    <!-- If the image grid is a slider, then add the .image-grid__wrapper as a wrapper, otherwise its not needed and will fuck shit up -->
+    <div class="image-grid__wrapper">
+      <!-- If the image grid is a slider, each slide should be wrapped with div.image-grid__slide, it shouldnt matter if it is even if it isnt a slider, but it is at least unneeded -->
+      <div class="image-grid__slide">
+        <div class="image-grid__row">
+          <div class="image-grid__item image-grid__item--small" style="background-image:url(../media/image-grid-sm.png);">
+            <img src="media/image-grid-sm.png" alt="">
+          </div>
+          <div class="image-grid__item image-grid__item--medium" style="background-image:url(../media/image-grid-med.png);">
+            <img src="media/image-grid-med.png" alt="">
+          </div>
+        </div>
+        <div class="image-grid__row">
+          <div class="image-grid__item image-grid__item--large" style="background-image:url(../media/image-grid-lg.png);">
+            <img src="media/image-grid-lg.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="image-grid__slide">
+        <div class="image-grid__row">
+          <div class="image-grid__item image-grid__item--small" style="background-image:url(../media/image-grid-sm.png);">
+            <img src="media/image-grid-sm.png" alt="">
+          </div>
+          <div class="image-grid__item image-grid__item--medium" style="background-image:url(../media/image-grid-med.png);">
+            <img src="media/image-grid-med.png" alt="">
+          </div>
+        </div>
+        <div class="image-grid__row">
+          <div class="image-grid__item image-grid__item--large" style="background-image:url(../media/image-grid-lg.png);">
+            <img src="media/image-grid-lg.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="image-grid__slide">
+        <div class="image-grid__row">
+          <div class="image-grid__item image-grid__item--small" style="background-image:url(../media/image-grid-sm.png);">
+            <img src="media/image-grid-sm.png" alt="">
+          </div>
+          <div class="image-grid__item image-grid__item--medium" style="background-image:url(../media/image-grid-med.png);">
+            <img src="media/image-grid-med.png" alt="">
+          </div>
+        </div>
+        <div class="image-grid__row">
+          <div class="image-grid__item image-grid__item--large" style="background-image:url(../media/image-grid-lg.png);">
+            <img src="media/image-grid-lg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid__controls">
+      <nav class="image-grid__arrows">
+        <a href="#" class="image-grid__arrows-item image-grid__arrows-left">left</a>
+        <div class="image-grid__dots">
+
+        </div>
+        <a href="#" class="image-grid__arrows-item image-grid__arrows-right">right</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="preview">
+  <div class="container preview__container">
+    <div class="preview__content">
+      <h5>PREVIEW</h5>
+      <h2>Web-Based Spreadsheet</h2>
+      <p>Simply share one HR management spreadsheet with your entire team, and control which users get to see which data. It’s all done securely online - so everyone’s working with the latest version, and in real time. You can end your organization’s spreadsheet nightmares overnight!</p>
+      <a href="#" class="button button--hollow">Request a Demo</a>
+    </div>
+    <div class="preview__media">
+      <div class="preview__video-trigger">
+        <img src="media/image-grid-lg.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product">
+  <div class="container product__container">
+    <div class="product__image-slider">
+      <div class="product__image-wrapper">
+      <div class="product__image">
+        <img class="product__image--bottom" src="media/product-image-1.png" alt="">
+        <img class="product__image--top" src="media/product-image-1.png" alt="">
+      </div>
+      <div class="product__image">
+        <img class="product__image--bottom" src="media/product-image-2.png" alt="">
+        <img class="product__image--top" src="media/product-image-2.png" alt="">
+      </div>
+      <div class="product__image">
+        <img class="product__image--bottom" src="media/product-image-3.png" alt="">
+        <img class="product__image--top" src="media/product-image-3.png" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="product__content-slider">
+      <div class="product__content-wrapper">
+        <div class="product__content">
+          <h5>Our Solutions</h5>
+          <h2>Merit Compensation</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo nunc vel odio dapibus gravida. Donec suscipit tortor at nunc ornare, a imperdiet dui euismod.</p>
+          <a href="#" class='learn-more'>Learn More &rarr;</a>
+        </div>
+        <div class="product__content">
+          <h5>Step 2</h5>
+          <h2>Customize</h2>
+          <p>Upload an existing Excel spreadsheet that you’d like to turn into a secure, multi-user, HR business application.</p>
+        </div>
+        <div class="product__content">
+          <h5>Step 3</h5>
+          <h2>Share</h2>
+          <p>Upload an existing Excel spreadsheet that you’d like to turn into a secure, multi-user, HR business application.</p>
+        </div>
+      </div>
+      <nav class="product__arrows">
+        <a href="#" class="product__arrows-item product__arrows-left">left</a>
+        <a href="#" class="product__arrows-item product__arrows-right">right</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta__container">
+    <h2>Want to try <b>SecureSheet?</b></h2>
+    <p>See why so many others use chose us. </p>
+    <a href="#" class="button">Request a Demo</a>
+  </div>
+</section>
+
+<section class="hero hero--center hero--form">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1>Login</h1>
+    <form>
+      <div class="input">
+        <label>Email</label>
+        <input type="text" name="" value="">
+      </div>
+      <div class="input">
+        <label>Password</label>
+        <input type="text" name="" value="">
+      </div>
+      <button class="button" type="button" name="button">Login</button>
+    </form>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+@@include('partials/footer.html')

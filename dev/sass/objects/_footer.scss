@@ -1,0 +1,126 @@
+.footer-global{
+  h5{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: $grey-d;
+  }
+  a{
+    text-decoration: none;
+    color: $grey-d;
+    letter-spacing: .58px;
+    opacity: 1;
+    line-height: 1;
+    font-size: 1.6rem;
+    &:hover{
+      opacity: .75;
+    }
+  }
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:before{
+      content: "";
+      width: .2rem;
+      height: 15rem;
+      background-color: #6A7886;
+      opacity: .25;
+      display: block;
+      order: 2;
+      flex-shrink: 0;
+    }
+    &:after{
+      content: "";
+      width: .2rem;
+      height: 15rem;
+      background-color: #6A7886;
+      opacity: .25;
+      display: block;
+      order: 4;
+      flex-shrink: 0;
+    }
+  }
+  &__details{
+    max-width: 37rem;
+    order: 1;
+    img{
+      margin-bottom: 2rem;
+      margin-top: -1rem;
+      width: 100%;
+      max-width: 22rem;
+    }
+    p{
+      opacity: 0.75;
+      font-size: 1.6rem;
+      color: $grey-d;
+      letter-spacing: 0.58px;
+      line-height: 3rem;
+    }
+  }
+  &__contact{
+    max-width: 22rem;
+    order: 3;
+  }
+  &__explore{
+    max-width: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    order: 5;
+    h5{
+      width: 100%;
+    }
+    a{
+      width: 11rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__content{
+    border-bottom: 1px solid $grey-l;
+    padding: 10rem 0;
+  }
+  @include breakpoint(1050px){
+    &__details, &__contact, &__explore{
+      width: calc(33.333333% - 2rem);
+    }
+  }
+  @include breakpoint(850px){
+    &__container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:before,&:after{
+        display: none;
+      }
+    }
+    &__details, &__contact, &__explore{
+      width: 100%;
+      max-width: 50rem;
+    }
+    &__explore{
+    }
+    &__contact{
+      padding: 2rem 0 2rem;
+      margin-bottom: 2rem;
+      border-top: 1px solid $grey-l;
+      border-bottom: 1px solid $grey-l;
+      p{
+        margin: 0;
+      }
+      a{
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  @include breakpoint(700px){
+    &__content{
+      padding: 6rem 0;
+    }
+    &__details{
+      img{
+        margin: 0 0 2rem;
+      }
+    }
+  }
+}

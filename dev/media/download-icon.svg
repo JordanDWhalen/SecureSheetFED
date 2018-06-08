@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>login copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="button/outline/download" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-24.000000, -16.000000)">
+        <g id="Button" transform="translate(1.000000, 0.000000)" fill="#3096D2">
+            <g id="Group" transform="translate(23.000000, 16.000000)">
+                <g id="login-copy" transform="translate(9.000000, 8.500000) scale(-1, 1) rotate(-90.000000) translate(-9.000000, -8.500000) translate(0.500000, -0.500000)">
+                    <rect id="Rectangle" x="0" y="0" width="2" height="18" rx="1"></rect>
+                    <path d="M10.2697882,10.26255 C11.7856737,10.2766287 13.148741,10.3005625 14.5118084,10.2977468 C15.6507425,10.2977468 16.3073334,9.79548896 16.2289922,8.94302338 C16.1316804,7.88465675 15.433284,7.62384874 14.5623964,7.62525661 C13.195816,7.62772038 11.8295869,7.60378658 10.2964875,7.59005985 C10.3031623,6.86535851 10.3295102,6.20541922 10.310891,5.5468878 C10.2831378,4.57897684 9.94096577,4.33682312 9.23870505,4.85315962 C7.71122649,5.97593633 6.2174733,7.15080425 4.71423486,8.31300134 C4.24137696,8.67904767 4.22767603,9.08733011 4.70264176,9.4656953 C6.21641939,10.6740001 7.7238735,11.8942719 9.25837818,13.0698438 C9.89459338,13.5573189 10.2156871,13.2025355 10.2451968,12.4637555 C10.271896,11.7925533 10.2620595,11.1174794 10.2697882,10.26255 Z" id="Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,124 @@
+.image-grid{
+  &__header{
+    text-align: center;
+  }
+  &__container{
+    max-width: 90rem;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & + .image-grid__row{
+      margin-top: 2.4rem;
+    }
+  }
+  &__item{
+    height: 35rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img{
+      display: none;
+    }
+    &--small{
+      max-width: calc(33.33333333% - 1.2rem);
+    }
+    &--medium{
+      max-width: calc(66.66666666% - 1.2rem);
+    }
+  }
+  &__controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__arrows{
+    display: flex;
+    margin-top: 4rem;
+    &-item{
+      height: 4.8rem;
+      width: 4.8rem;
+      display: block;
+      background-image: url(../media/slider-arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-indent: -9999px;
+      outline: none;
+    }
+    &-left{
+      transform: rotate(180deg);
+    }
+  }
+  &__dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2.5rem 0 3rem;
+    .slick-dots{
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      margin: 0;
+      li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.2rem;
+        width: 1.2rem;
+        margin: 0 1rem 0 0;
+      }
+      button{
+        text-indent: -9999px;
+        padding: 0;
+        height: 1.2rem;
+        width: 1.2rem;
+        appearance: none;
+        border: none;
+        background-color: $grey-l;
+        border-radius: 100%;
+        transition: .25s all ease;
+        outline: none;
+        margin: 0;
+      }
+      .slick-active button{
+        background-color: $blue;
+      }
+    }
+  }
+  @include breakpoint(900px){
+    &__item{
+      height: 30rem;
+    }
+  }
+  @include breakpoint(800px){
+    &__item{
+      height: 25rem;
+    }
+  }
+  @include breakpoint(700px){
+    &__item{
+      height: 20rem;
+    }
+  }
+  @include breakpoint(550px){
+    &__row{
+      flex-wrap: wrap;
+    }
+    &__item{
+      height: auto;
+      max-width: 100%;
+      background-image: none;
+      img{
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+      & + .image-grid__item{
+        margin-top: 2.4rem;
+      }
+    }
+  }
+}

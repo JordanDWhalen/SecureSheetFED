@@ -1,0 +1,110 @@
+.whitepaper{
+  position: relative;
+  border-bottom: 1px solid $grey-l;
+  padding: 12rem 0;
+  &__container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__content{
+    max-width: 55rem;
+    h5{
+      color: $grey-d;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $black;
+      margin-top: 1rem;
+    }
+    p{
+      margin: 4rem 0 7rem;
+      color: $grey-d;
+      letter-spacing: 0.58px;
+      line-height: 30px;
+      opacity: 0.75;
+    }
+  }
+  &__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $gradient;
+    width: 55rem;
+    height: 100%;
+    border-radius: 0 10rem 0 0;
+    .wp-image {
+      content: "";
+      width: calc(100% + 15rem);
+      padding-bottom: calc(100% + 15rem);
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -2.5rem;
+      right: -10rem;
+    }
+  }
+  @include breakpoint(1250px){
+    &__content{
+      max-width: 48rem;
+    }
+  }
+  @include breakpoint(1150px){
+    &__image{
+      width: 30rem;
+      &:after{
+        padding-bottom: 0;
+        height: 100%;
+        top: 0;
+      }
+      .wp-image{
+        height: 100%;
+        padding: 0;
+        top: 0;
+      }
+    }
+    &__content{
+      max-width: 100%;
+      padding-left: 40rem;
+      padding-right: 5rem;
+    }
+  }
+  @include breakpoint(850px){
+    padding-top: 0;
+    &__image{
+      position: relative;
+      width: 100%;
+      height: 30rem;
+      margin-bottom: 10rem;
+      border-radius: 0;
+      &:after{
+        height: 150%;
+        width: 40rem;
+        left: calc(50% - 20rem);
+        top: auto;
+        bottom: -5rem;
+      }
+      .wp-image{
+        height: calc(100% + 10rem);
+        width: 100%;
+        left: 0;
+      }
+    }
+    &__container{
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__content{
+      padding: 0 2rem;
+    }
+  }
+  @include breakpoint(700px){
+    padding-bottom: 6rem;
+    &__image{
+      margin-bottom: 7.5rem;
+    }
+  }
+}

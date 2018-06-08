@@ -1,0 +1,140 @@
+.preview{
+  border-bottom: 1px solid $grey-l;
+  overflow: hidden;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    width: 55rem;
+    max-width: calc(100% - 65rem);
+    h5{
+      color: $grey-d;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    h2{
+      color: $black;
+    }
+    p{
+      margin: 4rem 0 2.5rem;
+      color: $grey-d;
+      letter-spacing: 0.58px;
+      line-height: 30px;
+      opacity: 0.75;
+    }
+  }
+  &__video, &__media{
+    position: relative;
+    right: calc(((100vw - 1150px) / 2) * -1);
+    width: 65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+    flex-shrink: 0;
+    &-trigger{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform: translateX(-5rem);
+      box-shadow: 0 12px 36px 0 rgba(0,0,0,0.15);
+    }
+    video, img{
+      display: block;
+      object-fit: cover;
+      max-width: 100%;
+      background-color: $black;
+    }
+    video{
+      width: 100%;
+    }
+    .hero__video-play{
+      background-color: transparent;
+      .pause-button{
+        opacity: 0;
+      }
+      &--in-progress{
+        background-color: rgba(0,0,0,0.5);
+      }
+      &--active{
+        background-color: transparent;
+      }
+    }
+    &:after{
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: calc(100% - 5rem);
+      border-radius: 10rem 0 0 10rem;
+      background: $gradient;
+    }
+  }
+  @include breakpoint(1300px){
+    &__video, &__media{
+      width: 55rem;
+    }
+  }
+  @include breakpoint(1200px){
+    &__content{
+      width: 50%;
+      max-width: calc(50% - 7.5rem);
+    }
+    &__video, &__media{
+      right: -3rem;
+      width: 50%;
+    }
+  }
+  @include breakpoint(1000px){
+    &__video-trigger{
+      transform: translateX(-2.5rem);
+    }
+  }
+  @include breakpoint(850px){
+    &__container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+    &__content{
+      order: 2;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 2rem 5rem;
+    }
+    &__video, &__media{
+      order: 1;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 5rem;
+      right: 0;
+      padding: 2.5rem;
+      &-trigger{
+        transform: none;
+        width: 50rem;
+        max-width: calc(100% - 2rem);
+      }
+      video{
+
+      }
+      &:after{
+        border-radius: 0 0 10rem 10rem;
+        width: 100%;
+        height: calc(100% - 7.5rem);
+      }
+    }
+  }
+  @include breakpoint(700px){
+    &__video, &__media{
+      &:after{
+        height: calc(100% - 4rem);
+      }
+    }
+  }
+}

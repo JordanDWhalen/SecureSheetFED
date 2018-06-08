@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.5" cy="18.5" r="18.5"></circle>
+        <path d="M34.2352941,31.1176471 L44,28.7058824 L18,18 L28.7058824,44 L31.1764706,34.2352941 L38.4705882,41.5294118 C38.8823529,41.9411765 39.5294118,41.9411765 39.8823529,41.5294118 L41.5294118,39.8823529 C41.9411765,39.4705882 41.9411765,38.8235294 41.5294118,38.4705882 L34.2352941,31.1176471 Z" id="path-3"></path>
+    </defs>
+    <g id="Product" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-780.000000, -3253.000000)">
+        <g id="Group-7" transform="translate(207.000000, 3223.000000)">
+            <g id="Group-8" transform="translate(574.000000, 0.000000)">
+                <g id="Group-4" transform="translate(0.000000, 31.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval" stroke="#B8C4D1" stroke-width="2" xlink:href="#path-1"></use>
+                    <circle id="Oval-Copy-3" stroke="#B8C4D1" stroke-width="2" mask="url(#mask-2)" cx="18.5" cy="-8.5" r="18.5"></circle>
+                    <circle id="Oval-Copy-4" stroke="#B8C4D1" stroke-width="2" mask="url(#mask-2)" cx="18.5" cy="46.5" r="18.5"></circle>
+                    <ellipse id="Oval-Copy" stroke="#B8C4D1" stroke-width="2" mask="url(#mask-2)" cx="18.5" cy="18.5" rx="9.5" ry="18.5"></ellipse>
+                    <path d="M18,0 L18,36.8930251" id="Path-6" stroke="#B8C4D1" stroke-width="2" mask="url(#mask-2)"></path>
+                    <path d="M37,19 L0,19" id="Path-6-Copy" stroke="#B8C4D1" stroke-width="2"></path>
+                    <g id="Shape" fill-rule="nonzero">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <path stroke="#FFFFFF" stroke-width="2" d="M36.1867526,31.6657103 L42.1802031,37.7113316 C43.0481934,38.4553233 43.0481934,39.7777848 42.2365185,40.5894597 L40.6416095,42.1802031 C39.8976179,43.0481934 38.5751564,43.0481934 37.7634815,42.2365185 L31.7141334,36.1871705 L28.9332039,47.1784633 L16.1615224,16.1615224 L47.2053115,28.9442591 L36.1867526,31.6657103 Z"></path>
+                        <path stroke="#B8C4D1" stroke-width="2" d="M40.7946885,28.4675056 L19.8384776,19.8384776 L28.4785608,40.8215367 L30.6388078,32.2834177 L39.1764706,40.8210806 L40.822305,39.1752462 C40.8341595,39.1633916 40.8341595,39.1917355 40.8194709,39.1748496 L32.2832024,30.5697402 L40.7946885,28.4675056 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

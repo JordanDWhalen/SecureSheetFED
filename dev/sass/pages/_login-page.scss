@@ -1,0 +1,9 @@
+.login-page{
+  .hero--form{
+    min-height: 100vh;
+    border-radius: 0;
+    &:after{
+      border-radius: 0;
+    }
+  }
+}

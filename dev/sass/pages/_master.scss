@@ -1,0 +1,21 @@
+.master-template{
+  > section {
+    &.general, &.testimonial, &.image-grid{
+      padding: 6rem 0;
+      border-bottom: 1px solid $grey-l;
+    }
+    &.general + .general{
+      padding-top: 0;
+      background-color: $white;
+      margin-top: -.1rem;
+      padding-top: 3rem;
+      &:last-of-type{
+        padding-bottom: 10rem;
+      }
+    }
+    &.hero + section{
+      margin-top: 0;
+      padding-top: 10rem;
+    }
+  }
+}

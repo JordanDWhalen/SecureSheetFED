@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>video-play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-685.000000, -588.000000)">
+        <g id="Content" fill="#FFFFFF">
+            <g id="Hero">
+                <g id="Video" transform="translate(470.000000, 485.000000)">
+                    <g id="icon/play/button" transform="translate(215.000000, 103.000000)">
+                        <path d="M35,70 C15.6700338,70 0,54.3299662 0,35 C0,15.6700338 15.6700338,0 35,0 C54.3299662,0 70,15.6700338 70,35 C70,54.3299662 54.3299662,70 35,70 Z M41.4930041,34.017094 L32.2288066,28.1538462 C31.8908093,27.9487179 31.5528121,27.9487179 31.2455418,28.1538462 C30.9382716,28.3589744 30.8,28.7350427 30.8,29.1111111 L30.8,40.8717949 C30.8,41.2478632 30.9843621,41.6239316 31.2455418,41.8290598 C31.399177,41.9145299 31.5835391,42 31.7679012,42 C31.9522634,42 32.1058985,41.9145299 32.2134431,41.8290598 L41.4776406,35.965812 C41.8156379,35.7606838 42,35.3846154 42,35.008547 C42,34.6324786 41.8310014,34.2735043 41.4930041,34.017094 Z" id="Oval-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

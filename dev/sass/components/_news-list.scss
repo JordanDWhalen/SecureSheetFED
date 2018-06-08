@@ -1,0 +1,186 @@
+.news-list{
+  &__container{
+    padding: 3rem;
+    max-width: 81.5rem;
+  }
+  &__item{
+    border: 2px solid $grey-l;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+    display: flex;
+    color: $grey-m;
+    font-family: $sans;
+    text-decoration: none;
+    &-details{
+      width: 100%;
+      padding: 3rem 0 4rem 3rem;
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    &-date{
+      margin-left: 5rem;
+      width: 15rem;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-left: 2px solid $grey-l;
+      flex-shrink: 0;
+      text-align: center;
+      &__mon{
+        font-weight: bold;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 2.67px;
+        margin: 0 0 .5rem;
+        line-height: 1;
+        transition: .25s all ease;
+      }
+      &__day{
+        font-size: 4.4rem;
+        color: $blue;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+    &-time{
+      margin-bottom: 1rem;
+      font-weight: bold;
+      transition: .25s all ease;
+      letter-spacing: 2.67px;
+    }
+    &-title{
+      color: $black;
+      line-height: 1.2;
+      font-weight: 600;
+      line-height: 3.6rem;
+      transition: .25s all ease;
+      margin-bottom: 0;
+    }
+    &:hover{
+      color: $blue;
+      .news-list__item{
+        &-title, &-date{
+          color: $blue;
+        }
+        &-image{
+          box-shadow: -6px 6px 48px 0 #DADDE1;
+        }
+      }
+    }
+  }
+  &__count{
+    width: 100%;
+    color: #6A7886;
+    text-align: center;
+  }
+  &__pagination{
+    display: flex;
+    justify-content: center;
+    &-item, .page-numbers{
+      width: 5rem;
+      height: 5rem;
+      border-radius: 100%;
+      text-decoration: none;
+      display: block;
+      transition: .25s all ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover{
+        color: $blue;
+        background-color: transparentize($blue, .9);
+      }
+
+      &--active, &.current{
+        background-color: $blue!important;
+        color: $white!important;
+      }
+    }
+    &-prev, .prev{
+      border: 2px solid $grey-l;
+      text-indent: -9999px;
+      background-image: url(../media/pagination-arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &-next, .next{
+      border: 2px solid $grey-l;
+      text-indent: -9999px;
+      background-image: url(../media/pagination-arrow-alt.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  @include breakpoint(700px){
+    &__item{
+      position: relative;
+      flex-direction: column;
+      &-title{
+        font-size: 1.8rem;
+      }
+      &-date{
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem 4rem;
+        flex-shrink: 0;
+        border: none;
+        background-color: $grey-l;
+        flex-direction: column;
+        time{
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+        &__day{
+          font-size: 1.6rem;
+          color: $grey;
+        }
+        &__mon{
+          font-size: 1.6rem;
+          color: $grey;
+          margin: 0 1rem 0 0;
+        }
+      }
+      &-details{
+        width: 100%;
+        margin-left: 0;
+        padding: 3rem 4rem;
+      }
+    }
+    &__pagination{
+      &-pagenumber{
+         display: none;
+       }
+       &-prev{
+         text-indent: 0;
+         width: auto;
+         border-radius: 10rem;
+         padding: 0 2.5rem 0 5rem;
+         background-position: 2.5rem 50%;
+       }
+       &-next{
+         transform: rotate(0deg);
+         text-indent: 0;
+         width: auto;
+         border-radius: 10rem;
+         padding: 0 5rem 0 2.5rem;
+         background-position: calc(100% - 2.5rem) 50%;
+       }
+    }
+  }
+  @include breakpoint(500px){
+    &__item-details{
+      padding: 2rem;
+    }
+    &__item-date{
+      padding: 1rem 2rem;
+    }
+  }
+}

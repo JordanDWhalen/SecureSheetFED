@@ -1,0 +1,46 @@
+@@include('html-start.html')
+
+<header class="header-global">
+
+  <div class="container header-global__container">
+
+    <a href="/" class="header-global__logo">
+      <div class="logo-white">
+        <img src="media/logo-white.svg" alt="">
+      </div>
+      <div class="logo-color">
+        <img src="media/logo-color.svg" alt="">
+      </div>
+    </a>
+
+    <div class="header-global__nav-trigger">
+      <span class="header-global__nav-trigger_line top">
+        <span class="left"></span>
+        <span class="right"></span>
+      </span>
+      <span class="header-global__nav-trigger_line mid">
+        <span class="left"></span>
+        <span class="right"></span>
+      </span>
+      <span class="header-global__nav-trigger_line bot">
+        <span class="left"></span>
+        <span class="right"></span>
+      </span>
+    </div>
+
+    <nav class="header-global__nav">
+      <a href="#" class="header-global__nav-item header-global__nav-item--active">Home</a>
+      <a href="#" class="header-global__nav-item">Product</a>
+      <a href="#" class="header-global__nav-item">Pricing</a>
+      <a href="#" class="header-global__nav-item">Support</a>
+      <a href="#" class="button button--trans" data-featherlight="#login-modal" data-featherlight-variant="lightbox--login">
+        @@include('../../media/login-icon.svg')
+        Login
+      </a>
+      <a href="#" class="button" data-featherlight="#request-demo" data-featherlight-variant="lightbox--tour">
+        Request a Demo
+      </a>
+    </nav>
+
+  </div>
+</header>

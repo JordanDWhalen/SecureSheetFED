@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>pagination-arrow-alt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="pagination/web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-872.000000, -31.000000)">
+        <g id="Content" transform="translate(1.000000, 12.000000)" fill="#6A7886">
+            <g id="Group" transform="translate(849.000000, 0.000000)">
+                <g id="icon/caret" transform="translate(25.000000, 25.000000) scale(-1, 1) rotate(90.000000) translate(-25.000000, -25.000000) translate(17.000000, 17.000000)">
+                    <path d="M11,8.41619835 C11,8.23636364 10.9270833,8.06710744 10.8020833,7.94016529 L6.13541667,3.20099174 C6.01041667,3.07404959 5.84375,3 5.66666667,3 C5.30208333,3 5,3.30677686 5,3.67702479 L5,13.1553719 C5,13.5256198 5.30208333,13.8323967 5.66666667,13.8323967 C5.84375,13.8323967 6.01041667,13.7583471 6.13541667,13.631405 L10.8020833,8.8922314 C10.9270833,8.76528926 11,8.59603306 11,8.41619835 L11,8.41619835 Z" id="&lt;" transform="translate(8.000000, 8.416198) rotate(-270.000000) translate(-8.000000, -8.416198) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

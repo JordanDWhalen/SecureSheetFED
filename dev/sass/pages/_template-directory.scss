@@ -1,0 +1,33 @@
+.template-directory{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__logo{
+    height: 50vh;
+    background-color: $grey-l;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 30rem;
+      height: auto;
+    }
+  }
+  &__nav{
+    height: 50vh;
+    background-color: $navy;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10rem;
+    .button{
+      margin: 1rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+$black: #333333;
+$offwhite: #efefef;
+
+$grey-l: #DADDE1;
+$grey-m: #B8C4D1;
+$grey: #7E8890;
+$grey-d: #6A7886;
+$white: #fff;
+
+$blue: #3096D2;
+$blue-l: #76B5D9;
+$sky: #DAF1FF;
+$navy: #023162;
+
+$main: $blue;
+$main-l: lighten($main, 15%);
+$main-d: darken($main, 10%);
+
+$secondary: $navy;
+
+$gradient: radial-gradient(50% 100%, #10587F 5%, #023162 100%);

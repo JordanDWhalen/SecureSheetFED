@@ -1,0 +1,239 @@
+.testimonial{
+  padding: 10rem 5rem;
+  position: relative;
+  overflow: hidden;
+  &__item{
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  &__content{
+    width: 75%;
+    color: $grey-d;
+  }
+  &__image{
+    width: 25%;
+    min-width: 35rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 5rem;
+    img{
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__icon{
+    margin-bottom: 3rem;
+    height: 5rem;
+    width: 5rem;
+    svg{
+      width: 100%;
+      height: 100%;
+      fill:$grey-l;
+    }
+  }
+  &__label{
+    color: $grey-d;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  &__quote{
+    color: $grey-d;
+    font-weight: 300;
+    line-height: 3.6rem;
+  }
+  &__source{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: $grey-d;
+    &-image{
+      border-radius: 100%;
+    }
+    b{
+      color: $blue;
+    }
+  }
+  &__arrows{
+    display: flex;
+    margin-top: 4rem;
+    &-item{
+      height: 4.8rem;
+      width: 4.8rem;
+      display: block;
+      background-image: url(../media/slider-arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-indent: -9999px;
+      outline: none;
+    }
+    &-left{
+      transform: rotate(180deg);
+    }
+  }
+  &__dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2.5rem 0 3rem;
+    .slick-dots{
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      margin: 0;
+      li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.2rem;
+        width: 1.2rem;
+        margin: 0 1rem 0 0;
+      }
+      button{
+        text-indent: -9999px;
+        padding: 0;
+        height: 1.2rem;
+        width: 1.2rem;
+        appearance: none;
+        border: none;
+        background-color: $grey-l;
+        border-radius: 100%;
+        transition: .25s all ease;
+        outline: none;
+        margin: 0;
+      }
+      .slick-active button{
+        background-color: $blue;
+      }
+    }
+  }
+  &__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    z-index: 2;
+    svg{
+      width: 120rem;
+      min-width: 120vw;
+      height: auto;
+      opacity: .05;
+      max-height: none;
+      position: absolute;
+      top: 15%;
+      left: 0;
+      z-index: 0;
+    }
+    &--image{
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      opacity: .5;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.00) 0%, #000000 100%);
+        opacity: .5;
+      }
+    }
+  }
+  .slick-track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--no-image{
+    .testimonial{
+      &__icon{
+        margin: 0 auto 2rem;
+        height: 3rem;
+        width: 3rem;
+      }
+      &__container{
+        justify-content: center;
+        text-align: center;
+      }
+      &__content{
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+      }
+      &__quote{
+        text-align: left;
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+      &__source{
+        margin-bottom: 0;
+        &-image{
+          height: 5rem;
+        }
+      }
+    }
+  }
+  &--blue{
+    background-color: $blue;
+    .testimonial{
+      &__label, &__quote{
+        color: $white;
+      }
+    }
+  }
+  @include breakpoint(850px){
+    padding: 12rem 2rem;
+    &__item{
+      flex-direction: column;
+    }
+    &__container{
+      flex-direction: column;
+    }
+    &__content{
+      order: 2;
+      width: 100%;
+    }
+    &__image{
+      order: 1;
+      width: 100%;
+      justify-content: center;
+      padding-left: 0;
+      img{
+        max-width: 30rem;
+      }
+    }
+    &__background{
+      svg{
+        top: 50%;
+      }
+    }
+    &__arrows{
+      justify-content: center;
+    }
+  }
+  @include breakpoint(700px){
+    padding: 6rem 2rem;
+    &__quote{
+      padding:0;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+    &__container{
+      padding: 0;
+    }
+    &__image{
+      min-width: 0;
+    }
+  }
+}
