@@ -1,5 +1,5 @@
 ![Gulp!](https://lh3.googleusercontent.com/AkzvBqgkM0U2OCC0uIrlE96MKA3M1FSvTKyerFy8fllGtC81amn7eQYo7nqVGlOzw51Va3TSWgh5ga_w4IVIW1cv4vj5MqN-HWUl6ptEMLZeBxWT6FEjONDDX52JfyX3pRiYTTtlHEpxHAn3y_3a3Loh32VMK_FCdUmukFx9pNCLFMrGlhq6DW_AD_Z5e5Rj1HPCh_AuvQOnXCHl8ykCOcN1zEqWkz40CFnzd8tyKq0ebN8dVxcvFViR-Iqm8VNHTYs9xQs1a1w7pWVc5SkbCsNf9KJh_lE3X5DEZ82Y8V3LguIXYkTrNATooXUzOB6idB8FOoPcmJQqJbtdrbw3LbRz9mNQ1ZxoJ3vWpazM7z_hzaxRFJqjts_8C47EN9D2WPj8IYrAND8GJeuGJ_H3q3xaJJO_e1WOBO9DhoH0tjk3Ottj6LLjEcNCa1ysGgFr6SaKCw18PHd1PlblY4PyWZ1PZWxiMfxGRttgb4UGw5IYmuOVeEFVNrHIW_3P1kuurPUxwc8Rq96uvSS8zCsRsAKhLgkiSwNnWs4FwmjedlW8bZif6DVLhAGxV0EejzaquSZb=w1600-h400-no)
-# UG Gulp Starter
+# Gulp Starter
 The standard starter template for UG development projects.
 
 ## To use this package:
@@ -47,8 +47,8 @@ The standard starter template for UG development projects.
     - application.scss: This is the file where you can add new folders containing scss files that you'd like to be compiled.
     - vendor: Folder containing all default project css libraries, or reset files. If you'd like to add a new CSS library, place it in this folder.
     - base: Folder for project defaults. Variables, mixins, and the like. Anything your SASS is going to be dependent upon that isnt a library.
-    - components: Folder for all simple and small repeating modules that you use to create more complext objects. E.G. Dropdowns, Products, etc. Anything that fits into a larger containing component/object.
-    - objects: Folder for combinations of components, and the neccessary SCSS to layout those components.
+    - components: Folder for reused or reusable modular items. These should be large enough in complexity that they could be made up of multiple simpler elements. They will often contain variations, as well as layout details. EG. Header, Footer, Cards, Etc.
+    - elements:  Simple objects that can be reused within different components. These will contain the bare minimum of layout details as they need to be as flexible as possible for different contexts. EG. Dropdowns, Buttons, Etc.
     - pages: Folder for all page specific styling.
 - public: Folder for your HTML, and the folder within which your compiled JS and CSS will be output to.
   - css: Compiled SASS.
